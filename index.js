@@ -3,13 +3,13 @@ console.log('funguju!');
 
 //KOSTKA
 
-let viditelneCislo = 1
+let side = 1
 const kostka = document.querySelector('.dice')
 const pootocKostkou = () => {
-	viditelneCislo = viditelneCislo + 1
-	if (viditelneCislo === 7) {
-		viditelneCislo = 1
+	side = side + 1
+	if (side === 7) {
+		side = 1
 	}
-	kostka.src = `img/side${viditelneCislo}.svg`
+	kostka.src = `img/side${side}.svg`
 }
 document.addEventListener('keydown', pootocKostkou)
